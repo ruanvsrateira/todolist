@@ -1,0 +1,12 @@
+<form action="/edit/<%= task._id %>" method="POST">
+    <h1>Todo List</h1>
+    <br>
+    <label>Titulo</label>
+    <input name="titulo" value="<%= task.titulo %>" placeholder="Insira o titulo "/>
+    <br>
+    <label>Descricao</label>
+    <input value="<%= task.descricao %>" name="descricao" placeholder="Insira a Descricao "/>
+    <br>
+    <button type="submit">Enviar</button>
+</form>
+<a href="/"><button>voltar</button></a>
